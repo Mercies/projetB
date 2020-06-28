@@ -93,7 +93,7 @@ public class ExamServiceImpl implements ExamService {
 		examDTO.setId(exam.getId());
 		examDTO.setName(exam.getName());
 		Module module = exam.getModule();
-		if (module != null) {
+		if (module != null && module.getId() != null) {
 			examDTO.setModule(moduleService.convertModelToDTO(exam.getModule()));
 		}
 		examDTO.setCreatedAt(exam.getCreatedAt());
@@ -136,7 +136,7 @@ public class ExamServiceImpl implements ExamService {
 	@Override
 	public void deleteByModule(Long idModule) {
 		examRepository.deleteByModule(idModule);
-		
+
 	}
 
 }

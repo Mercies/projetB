@@ -92,10 +92,10 @@ public class OranizationServiceImpl implements OrganizationService {
 		organizationDTO.setName(organization.getName());
 		List<Branch> branchs = organization.getBranchs();
 		List<Level> levels = organization.getLevels();
-		if (branchs != null) {
+		if (branchs != null && !branchs.isEmpty()) {
 			organizationDTO.setBranchs(branchService.convertEntitiesToDtosWithOutOrganization(branchs));
 		}
-		if (levels != null) {
+		if (levels != null && !levels.isEmpty()) {
 			organizationDTO.setLevels(levelService.convertEntitiesToDtosWithOutOrganization(levels));
 		}
 		organizationDTO.setCreatedAt(organization.getCreatedAt());

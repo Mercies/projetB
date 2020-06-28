@@ -107,11 +107,11 @@ public class ProgressionModuleServiceImpl implements ProgressionModuleService {
 		progressionModuleDTO.setNoteFinal(progressionModule.getNoteFinal());
 		Module module = progressionModule.getModule();
 		User student = progressionModule.getStudent();
-		if (module != null) {
+		if (module != null && module.getId() != null) {
 			progressionModuleDTO.setModule(moduleService.convertModelToDTOWithOutRelation(module));
 		}
 
-		if (student != null) {
+		if (student != null & student.getId() != null) {
 			progressionModuleDTO.setStudent(userService.convertModelToDTOWithOutRelation(student));
 		}
 		return progressionModuleDTO;

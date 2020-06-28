@@ -12,9 +12,13 @@ import org.springframework.stereotype.Service;
 
 import com.learning.dao.UserRepository;
 import com.learning.dto.UserDTO;
+import com.learning.model.Organization;
+import com.learning.model.Role;
 import com.learning.model.User;
 import com.learning.model.base.Demande;
 import com.learning.model.base.PartialList;
+import com.learning.service.OrganizationService;
+import com.learning.service.RoleService;
 import com.learning.service.UserService;
 
 @Service
@@ -22,6 +26,11 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	private OrganizationService organizationService;
+
+	@Autowired
+	private RoleService roleService;
 
 	@Override
 	public UserDTO save(UserDTO userDTO) {
@@ -70,6 +79,20 @@ public class UserServiceImpl implements UserService {
 		userDTO.setId(user.getId());
 		userDTO.setFirstName(user.getFirstName());
 		userDTO.setLastName(user.getLastName());
+		userDTO.setEmail(user.getEmail());
+
+		userDTO.setPassword(user.getPassword());
+		Organization organization = user.getOrganization();
+
+		Role role = user.getRefRole();
+		if (organization != null && organization.getId() != null) {
+			userDTO.setOrganization(organizationService.convertModelToDTO(organization));
+		}
+
+		if (role != null && role.getId() != null) {
+			userDTO.setRefRole(roleService.convertModelToDTO(role));
+		}
+
 		userDTO.setCreatedAt(user.getCreatedAt());
 		userDTO.setUpdatedAt(user.getUpdatedAt());
 
@@ -124,7 +147,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public UserDTO convertModelToDTOWithOutRelation(User user) {
-	
+
 		UserDTO userDTO = new UserDTO();
 		userDTO.setId(user.getId());
 		userDTO.setFirstName(user.getFirstName());
@@ -157,7 +180,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<UserDTO> findByLevelAndBranch(Long idLevel, Long idBranch) {
-		List<User> list=userRepository.findByLevelAndBranch(idLevel, idBranch);
+		List<User> list = userRepository.findByLevelAndBranch(idLevel, idBranch);
 		return convertEntitiesToDtosWithOutRelation(list);
 	}
 
@@ -190,7 +213,6 @@ public class UserServiceImpl implements UserService {
 		return null;
 	}
 
-	
 	@Override
 	public void logout(String username) {
 		User user = findUser(username);
@@ -210,7 +232,5 @@ public class UserServiceImpl implements UserService {
 		userRepository.saveAndFlush(user);
 		return user;
 	}
-
-
 
 }

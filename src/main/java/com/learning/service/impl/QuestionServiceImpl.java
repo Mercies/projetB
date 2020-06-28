@@ -114,16 +114,16 @@ public class QuestionServiceImpl implements QuestionService {
 		Exam exam = question.getExam();
 		Quiz quiz = question.getQuiz();
 		List<Suggestion> suggestion = question.getSuggestions();
-		if (td != null) {
+		if (td != null && td.getId()!=null) {
 			questionDTO.setTd(tdService.convertModelToDTO(td));
 		}
-		if (quiz != null) {
+		if (quiz != null && quiz.getId()!=null) {
 			questionDTO.setQuiz(quizService.convertModelToDTO(quiz));
 		}
-		if (exam != null) {
+		if (exam != null && exam.getId()!=null) {
 			questionDTO.setExam(examService.convertModelToDTO(exam));
 		}
-		if (suggestion != null) {
+		if (suggestion != null && !suggestion.isEmpty()) {
 			questionDTO.setSuggestions(suggestionService.convertEntitiesToDtos(suggestion));
 		}
 		questionDTO.setCreatedAt(question.getCreatedAt());

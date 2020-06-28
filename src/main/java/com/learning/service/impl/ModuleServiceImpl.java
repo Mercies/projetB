@@ -117,14 +117,14 @@ public class ModuleServiceImpl implements ModuleService {
 		User user = module.getProfessor();
 		Branch branch = module.getBranch();
 		Level level = module.getLevel();
-		if (user != null) {
+		if (user != null && user.getId()!=null) {
 			moduleDTO.setProfessor(userService.convertModelToDTO(module.getProfessor()));
 
 		}
-		if (branch != null) {
+		if (branch != null&& branch.getId()!=null) {
 			moduleDTO.setBranch(branchService.convertModelToDTO(branch));
 		}
-		if (level != null) {
+		if (level != null &&level.getId()!=null) {
 			moduleDTO.setLevel(levelService.convertModelToDTO(level));
 		}
 		moduleDTO.setCreatedAt(module.getCreatedAt());

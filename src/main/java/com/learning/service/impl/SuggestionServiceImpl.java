@@ -83,11 +83,6 @@ public class SuggestionServiceImpl implements SuggestionService {
 		suggestionDTO.setId(suggestion.getId());
 		suggestionDTO.setName(suggestion.getName());
 		suggestionDTO.setCorrect(suggestion.isCorrect());
-//		Question question = suggestion.getQuestion();
-//
-//		if (question != null) {
-//			suggestionDTO.setQuestion(questionService.convertModelToDTO(question));
-//		}
 
 		suggestionDTO.setCreatedAt(suggestion.getCreatedAt());
 		suggestionDTO.setUpdatedAt(suggestion.getUpdatedAt());

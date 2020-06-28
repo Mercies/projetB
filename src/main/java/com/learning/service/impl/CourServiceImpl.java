@@ -38,10 +38,10 @@ public class CourServiceImpl implements CourService {
 	public CourDTO save(CourDTO courDTO) {
 		Cour cour = convertDTOtoModel(courDTO);
 		cour = courRepository.save(cour);
-		Module module=cour.getModule();
-		Long idLevel=module.getLevel().getId();
-		Long idBranch=module.getBranch().getId();
-		List<UserDTO> students =userService.findByLevelAndBranch(idLevel, idBranch);
+		Module module = cour.getModule();
+		Long idLevel = module.getLevel().getId();
+		Long idBranch = module.getBranch().getId();
+		List<UserDTO> students = userService.findByLevelAndBranch(idLevel, idBranch);
 		progressionCourService.saveByCourAndStudents(cour, students);
 		return convertModelToDTO(cour);
 	}
@@ -87,7 +87,7 @@ public class CourServiceImpl implements CourService {
 		cour.setId(courDTO.getId());
 		cour.setName(courDTO.getName());
 		cour.setContent(courDTO.getContent());
-		if (courDTO.getModule() != null) {
+		if (courDTO.getModule() != null && courDTO.getModule().getId()!=null) {
 			cour.setModule(moduleService.convertDTOtoModel(courDTO.getModule()));
 		}
 
@@ -101,7 +101,7 @@ public class CourServiceImpl implements CourService {
 		courDTO.setName(cour.getName());
 		courDTO.setContent(cour.getContent());
 		Module module = cour.getModule();
-		if (module != null) {
+		if (module != null && module.getId() != null) {
 			courDTO.setModule(moduleService.convertModelToDTO(cour.getModule()));
 
 		}

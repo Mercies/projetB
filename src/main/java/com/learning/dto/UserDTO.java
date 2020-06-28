@@ -4,7 +4,7 @@ import javax.validation.constraints.NotNull;
 
 public class UserDTO extends HistorizedDTO {
 
-	private String login;
+	private String email;
 	
 
 	private String password;
@@ -37,18 +37,12 @@ public class UserDTO extends HistorizedDTO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserDTO(String firstName, @NotNull String login, @NotNull String password) {
-		super();
-		this.firstName = firstName;
-		this.login = login;
-		this.password = password;
-		;
-	}
-
-	public UserDTO(Long id, String login, String password, String firstName, String lastName, String token,
-			String tokenDate, @NotNull Boolean isOnline, @NotNull Boolean isOffline, RoleDTO role) {
+	
+	public UserDTO(Long id, String email, String password, String firstName, String lastName, String token,
+			String tokenDate, Boolean isOnline, Boolean isOffline, RoleDTO refRole, LevelDTO level, BranchDTO branch,
+			OrganizationDTO organization) {
 		super(id);
-		this.login = login;
+		this.email = email;
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -56,8 +50,12 @@ public class UserDTO extends HistorizedDTO {
 		this.tokenDate = tokenDate;
 		this.isOnline = isOnline;
 		this.isOffline = isOffline;
-		this.refRole = role;
+		this.refRole = refRole;
+		this.level = level;
+		this.branch = branch;
+		this.organization = organization;
 	}
+
 
 	public String getFirstName() {
 		return firstName;
@@ -75,12 +73,13 @@ public class UserDTO extends HistorizedDTO {
 		this.lastName = lastName;
 	}
 
-	public String getLogin() {
-		return login;
+
+	public String getEmail() {
+		return email;
 	}
 
-	public void setLogin(String login) {
-		this.login = login;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {

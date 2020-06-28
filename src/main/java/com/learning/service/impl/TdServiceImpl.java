@@ -26,7 +26,7 @@ public class TdServiceImpl implements TdService {
 	private TdRepository tdRepository;
 	@Autowired
 	private CourService courService;
-	
+
 	@Autowired
 	private QuestionService questionService;
 
@@ -94,7 +94,7 @@ public class TdServiceImpl implements TdService {
 
 		Cour cour = td.getCour();
 
-		if (cour != null) {
+		if (cour != null && cour.getId() != null) {
 			tdDTO.setCour(courService.convertModelToDTO(cour));
 		}
 

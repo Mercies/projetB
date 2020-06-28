@@ -3,6 +3,7 @@ package com.learning.service;
 import java.util.List;
 
 import com.learning.dto.BranchDTO;
+import com.learning.dto.LevelDTO;
 import com.learning.model.Branch;
 import com.learning.model.Organization;
 
@@ -20,4 +21,7 @@ public interface BranchService extends CrudService<Branch, BranchDTO> {
 	List<Branch> convertDtosToEntitiesWithOutOrganization(List<BranchDTO> list);
 	
    void deleteByOrganizationId(Long id);
+   
+   List<BranchDTO> findByOrganization(Long id);
+	
 }

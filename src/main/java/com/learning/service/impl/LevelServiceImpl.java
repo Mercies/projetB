@@ -23,7 +23,7 @@ public class LevelServiceImpl implements LevelService {
 
 	@Autowired
 	private LevelRepository levelRepository;
-	
+
 	@Autowired
 	private OrganizationService courService;
 
@@ -34,7 +34,6 @@ public class LevelServiceImpl implements LevelService {
 		level = levelRepository.save(level);
 		return convertModelToDTO(level);
 	}
-	
 
 	@Override
 	public LevelDTO findById(long idOut) {
@@ -62,7 +61,8 @@ public class LevelServiceImpl implements LevelService {
 		String name = level.getName();
 		Long idOrganization = level.getOrganization() != null ? level.getOrganization().getId() : null;
 
-		pageLevel = idOrganization != null ? levelRepository.findByNameAndOrganization(name, idOrganization, PageRequest.of(page, size))
+		pageLevel = idOrganization != null
+				? levelRepository.findByNameAndOrganization(name, idOrganization, PageRequest.of(page, size))
 				: levelRepository.findByName(name, PageRequest.of(page, size));
 
 		List<LevelDTO> list = convertEntitiesToDtos(pageLevel.getContent());
@@ -87,12 +87,12 @@ public class LevelServiceImpl implements LevelService {
 		LevelDTO levelDTO = new LevelDTO();
 		levelDTO.setId(level.getId());
 		levelDTO.setName(level.getName());
-		Organization cour = level.getOrganization();
-		if (cour != null) {
-			levelDTO.setOrganization(courService.convertModelToDTO(level.getOrganization()));
-			
+		Organization org = level.getOrganization();
+		if (org != null && org.getId() != null) {
+			levelDTO.setOrganization(courService.convertModelToDTO(org));
+
 		}
-		
+
 		levelDTO.setCreatedAt(level.getCreatedAt());
 		levelDTO.setUpdatedAt(level.getUpdatedAt());
 		return levelDTO;
@@ -182,9 +182,12 @@ public class LevelServiceImpl implements LevelService {
 
 	@Override
 	public void deleteByOrganizationId(Long id) {
-	levelRepository.deleteByOrganisation(id);
-		
-	}
+		levelRepository.deleteByOrganisation(id);
 
-	
+	}
+	@Override
+	public List<LevelDTO> findByOrganization(Long id) {
+
+		return convertEntitiesToDtosWithOutOrganization(levelRepository.findByOrganization(id));
+	}
 }

@@ -87,9 +87,9 @@ public class BranchServiceImpl implements BranchService {
 		BranchDTO branchDTO = new BranchDTO();
 		branchDTO.setId(branch.getId());
 		branchDTO.setName(branch.getName());
-		Organization cour = branch.getOrganization();
-		if (cour != null) {
-			branchDTO.setOrganization(courService.convertModelToDTO(branch.getOrganization()));
+		Organization orga = branch.getOrganization();
+		if (orga != null && orga.getId() != null) {
+			branchDTO.setOrganization(courService.convertModelToDTO(orga));
 
 		}
 
@@ -182,8 +182,14 @@ public class BranchServiceImpl implements BranchService {
 
 	@Override
 	public void deleteByOrganizationId(Long id) {
-	branchRepository.deleteByOrganisation(id);
-		
+		branchRepository.deleteByOrganisation(id);
+
+	}
+	
+	@Override
+	public List<BranchDTO> findByOrganization(Long id) {
+
+		return convertEntitiesToDtosWithOutOrganization(branchRepository.findByOrganization(id));
 	}
 
 

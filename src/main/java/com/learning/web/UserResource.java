@@ -1,10 +1,13 @@
 package com.learning.web;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.learning.dto.UserDTO;
 import com.learning.model.base.ConstantBase;
+import com.learning.model.base.ConstantSecurity;
 import com.learning.model.base.Demande;
+import com.learning.security.CookieUtil;
 import com.learning.security.SecurityConstants;
 import com.learning.service.UserService;
 
@@ -79,5 +84,12 @@ public class UserResource {
 			LOGGER.error("Problem occored in api/cour" + ConstantBase.CRUD_REST_SAVE_OR_UPDATE + " : {} ", e);
 			return new ResponseEntity<>(ConstantBase.SERVER_ERROR, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+	}
+	@GetMapping("logout")
+	public ResponseEntity<HttpStatus> logOut(HttpServletResponse httpServletResponse) {
+		UserDetails userDetail = userService.getUserPrincipal();
+		userService.logout(userDetail.getUsername());
+		CookieUtil.clear(httpServletResponse, ConstantSecurity.COOKIE_NAME);
+		return new ResponseEntity<>(HttpStatus.OK);
 	}
 }
