@@ -1,462 +1,424 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.learning.model.Quiz" project="projetB" 
-    file="/projetB/src/main/java/com/learning/model/Quiz.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="193" x="253" y="12"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="com.learning.model.Role" project="projetB" 
+  <class id="1" language="java" name="com.learning.model.Role" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Role.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="147" x="464" y="1933"/>    
+    <position height="207" width="147" x="376" y="2020"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.learning.model.Historized" project="projetB" 
+  <class id="2" language="java" name="com.learning.model.Historized" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Historized.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="145" x="689" y="-325"/>    
+    <position height="297" width="145" x="565" y="-336"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="4" language="java" name="com.learning.model.RoleName" project="projetB" 
+  <enumeration id="3" language="java" name="com.learning.model.RoleName" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/RoleName.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="207" x="464" y="2414"/>    
+    <position height="153" width="207" x="376" y="2501"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="5" language="java" name="com.learning.model.Td" project="projetB" 
+  <class id="4" language="java" name="com.learning.model.Td" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Td.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="193" x="231" y="1933"/>    
+    <position height="297" width="193" x="143" y="2020"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.learning.model.User" project="projetB" 
+  <class id="5" language="java" name="com.learning.model.User" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/User.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="963" width="232" x="851" y="930"/>    
+    <position height="963" width="232" x="764" y="1017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="com.learning.model.Module" project="projetB" 
+  <class id="6" language="java" name="com.learning.model.Module" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Module.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="423" width="159" x="729" y="395"/>    
+    <position height="423" width="159" x="584" y="554"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="com.learning.model.ProgressionCour" project="projetB" 
+  <class id="7" language="java" name="com.learning.model.ProgressionCour" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/ProgressionCour.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="441" width="173" x="651" y="1933"/>    
+    <position height="441" width="173" x="563" y="2020"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="com.learning.model.Suggestion" project="projetB" 
+  <class id="8" language="java" name="com.learning.model.Suggestion" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Suggestion.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="158" x="52" y="930"/>    
+    <position height="315" width="158" x="300" y="554"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="com.learning.model.Level" project="projetB" 
+  <class id="9" language="java" name="com.learning.model.Level" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Level.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="194" x="882" y="2414"/>    
+    <position height="207" width="194" x="794" y="2501"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="com.learning.model.ProgressionModule" project="projetB" 
+  <class id="10" language="java" name="com.learning.model.ProgressionModule" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/ProgressionModule.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="333" width="189" x="750" y="12"/>    
+    <position height="333" width="189" x="605" y="1"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="com.learning.model.Branch" project="projetB" 
+  <class id="11" language="java" name="com.learning.model.Branch" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Branch.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="194" x="1125" y="2414"/>    
+    <position height="207" width="194" x="1037" y="2501"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="com.learning.model.Cour" project="projetB" 
+  <class id="12" language="java" name="com.learning.model.Cour" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Cour.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="351" width="140" x="528" y="930"/>    
+    <position height="351" width="140" x="563" y="1017"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="com.learning.model.Organization" project="projetB" 
+  <class id="13" language="java" name="com.learning.model.Organization" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Organization.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="177" x="927" y="1933"/>    
+    <position height="243" width="177" x="839" y="2020"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="com.learning.model.Question" project="projetB" 
+  <class id="14" language="java" name="com.learning.model.Question" project="projetB" 
     file="/projetB/src/main/java/com/learning/model/Question.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="495" width="215" x="231" y="395"/>    
+    <position height="513" width="215" x="185" y="1"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
+  <generalization id="15">    
+    <bendpoint x="532" y="1017"/>    
+    <bendpoint x="532" y="554"/>    
+    <bendpoint x="532" y="1"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <generalization id="16">    
-    <bendpoint x="896" y="1933"/>    
-    <bendpoint x="1113" y="930"/>    
-    <bendpoint x="1113" y="395"/>    
-    <bendpoint x="1113" y="12"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="3"/>  
+    <bendpoint x="488" y="1017"/>    
+    <bendpoint x="488" y="554"/>    
+    <bendpoint x="488" y="1"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <association id="17">    
+  <generalization id="17">    
+    <bendpoint x="834" y="554"/>    
+    <bendpoint x="834" y="1"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="18">    
+    <bendpoint x="574" y="1"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="19">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="18" name="question"/>      
-      <multiplicity id="19" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="20">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="21" name="organization"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="23">    
-    <bendpoint x="820" y="930"/>    
-    <bendpoint x="854" y="1933"/>    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="24" name="level"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="26">    
-    <bendpoint x="200" y="395"/>    
-    <bendpoint x="200" y="12"/>    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="27">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="28" name="module"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="30">    
-    <bendpoint x="698" y="930"/>    
-    <bendpoint x="698" y="395"/>    
-    <bendpoint x="698" y="12"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="31">    
-    <bendpoint x="222" y="12"/>    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="33">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="34" name="organization"/>      
-      <multiplicity id="35" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="36">    
-    <bendpoint x="1176" y="1933"/>    
-    <bendpoint x="1176" y="930"/>    
-    <bendpoint x="1176" y="395"/>    
-    <bendpoint x="1176" y="12"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="37">    
-    <bendpoint x="240" y="930"/>    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="38" name="td"/>      
-      <multiplicity id="39" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="40">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="41" name="cour"/>      
-      <multiplicity id="42" minimum="0" maximum="1"/>    
+      <attribute id="20" name="organization"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="43">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="44" name="organization"/>      
-      <multiplicity id="45" minimum="0" maximum="1"/>    
+  <association id="22">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="23" name="organization"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="46">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="47" name="student"/>      
-      <multiplicity id="48" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="49">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="50" name="progressionCours"/>      
-      <multiplicity id="51" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="52">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="53" name="quiz"/>      
-      <multiplicity id="54" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="55">    
-    <bendpoint x="918" y="395"/>    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="56" name="student"/>      
-      <multiplicity id="57" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="58">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="59">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="60" name="questions"/>      
-      <multiplicity id="61" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="63" name="branchs"/>      
-      <multiplicity id="64" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="65">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="66" name="suggestions"/>      
-      <multiplicity id="67" minimum="0" maximum="2147483647"/>    
+  <association id="25">    
+    <bendpoint x="733" y="1017"/>    
+    <bendpoint x="766" y="2020"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="26" name="level"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="68">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="69" name="levels"/>      
-      <multiplicity id="70" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="71">    
-    <bendpoint x="497" y="930"/>    
-    <bendpoint x="518" y="395"/>    
-    <bendpoint x="518" y="12"/>    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="28">    
+    <bendpoint x="808" y="2020"/>    
+    <bendpoint x="1026" y="1017"/>    
+    <bendpoint x="1026" y="554"/>    
+    <bendpoint x="1026" y="1"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="72">    
-    <bendpoint x="476" y="930"/>    
-    <bendpoint x="476" y="395"/>    
-    <bendpoint x="476" y="12"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="73">    
-    <bendpoint x="1134" y="1933"/>    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="74" name="branch"/>      
-      <multiplicity id="75" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="76">    
-    <bendpoint x="1134" y="930"/>    
-    <bendpoint x="1155" y="1933"/>    
+  <association id="29">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="77" name="branch"/>      
-      <multiplicity id="78" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="79">    
-    <bendpoint x="617" y="395"/>    
-    <bendpoint x="617" y="12"/>    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="80">    
-    <bendpoint x="261" y="930"/>    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="81" name="questions"/>      
-      <multiplicity id="82" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="83">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="84" name="module"/>      
-      <multiplicity id="85" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="86">    
-    <bendpoint x="1155" y="930"/>    
-    <bendpoint x="1155" y="395"/>    
-    <bendpoint x="1155" y="12"/>    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="87">    
-    <bendpoint x="875" y="1933"/>    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="88" name="level"/>      
-      <multiplicity id="89" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="90">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="91" name="refRole"/>      
-      <multiplicity id="92" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="93">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="94" name="tds"/>      
-      <multiplicity id="95" minimum="0" maximum="2147483647"/>    
+      <attribute id="30" name="student"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="96">    
-    <bendpoint x="979" y="395"/>    
-    <bendpoint x="979" y="12"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
+  <association id="32">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="33" name="cours"/>      
+      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="35">    
+    <bendpoint x="194" y="1017"/>    
+    <bendpoint x="194" y="554"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="36" name="questions"/>      
+      <multiplicity id="37" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <association id="97">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="98" name="cours"/>      
-      <multiplicity id="99" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="100">    
-    <bendpoint x="497" y="395"/>    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="101" name="cour"/>      
-      <multiplicity id="102" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="103">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="104" name="cour"/>      
-      <multiplicity id="105" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="106">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="107" name="professor"/>      
-      <multiplicity id="108" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="109">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="110" name="progressionModules"/>      
-      <multiplicity id="111" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="112">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="113" name="name"/>      
-      <multiplicity id="114" minimum="0" maximum="1"/>    
+  <association id="39">    
+    <bendpoint x="173" y="554"/>    
+    <bendpoint x="173" y="1017"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="40" name="td"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="115">    
-    <bendpoint x="719" y="12"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="42">    
+    <bendpoint x="152" y="1017"/>    
+    <bendpoint x="152" y="554"/>    
+    <bendpoint x="152" y="1"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="43">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="44" name="cour"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="47" name="refRole"/>      
+      <multiplicity id="48" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="50" name="branchs"/>      
+      <multiplicity id="51" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="53" name="name"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <bendpoint x="787" y="2020"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="56" name="level"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="59" name="professor"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="62" name="module"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="65" name="progressionModules"/>      
+      <multiplicity id="66" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="67">    
+    <bendpoint x="1047" y="1017"/>    
+    <bendpoint x="1067" y="2020"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="68" name="branch"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="70">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="71" name="tds"/>      
+      <multiplicity id="72" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="73">    
+    <bendpoint x="553" y="554"/>    
+    <bendpoint x="553" y="1"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="74">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="75" name="module"/>      
+      <multiplicity id="76" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="78" name="suggestions"/>      
+      <multiplicity id="79" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <bendpoint x="1046" y="2020"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="81" name="branch"/>      
+      <multiplicity id="82" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="83">    
+    <bendpoint x="441" y="1"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="84">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="85">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="86" name="organization"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="89" name="cour"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="91">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="92" name="levels"/>      
+      <multiplicity id="93" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="94">    
+    <bendpoint x="1089" y="2020"/>    
+    <bendpoint x="1089" y="1017"/>    
+    <bendpoint x="1089" y="554"/>    
+    <bendpoint x="1089" y="1"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <association id="95">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="96" name="progressionCours"/>      
+      <multiplicity id="97" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="98">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="99" name="question"/>      
+      <multiplicity id="100" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="101">    
+    <bendpoint x="773" y="554"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="102" name="student"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="104">    
+    <bendpoint x="1068" y="1017"/>    
+    <bendpoint x="1068" y="554"/>    
+    <bendpoint x="1068" y="1"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
